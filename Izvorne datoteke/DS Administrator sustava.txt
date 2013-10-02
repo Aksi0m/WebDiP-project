@@ -1,0 +1,57 @@
+title DS Administrator sustava
+
+Administrator sustava->Sustav: Zahtjev za prijavu
+Sustav->Administrator sustava: Forma za prijavu
+Administrator sustava->Sustav: Unos podataka
+Sustav->Modul za prijavu: Kreiranje prijave
+Modul za prijavu->Modul za prijavu: Provjera podataka
+
+alt Valanji podaci
+
+    Modul za prijavu->Sustav: Uspjesna prijava
+    Sustav->Administrator sustava: Prikaz glavne forme
+
+else Pogresni podaci
+
+    Modul za prijavu->Sustav: Neuspjesna prijava
+Sustav->Administrator sustava: Poruka o neuspjesnoj prijavi
+
+end
+
+Administrator sustava->Sustav: Zahtjev za statistiku statistiku rada sustava
+Sustav->Administrator sustava: Statistika rada sustava
+Administrator sustava->Sustav: Zahtjev za statistiku pojedinog korisnika
+Sustav->Administrator sustava: Statstika pojedingo korisnika
+Administrator sustava->Sustav: Zahtjev za brisanje korisnickog racuna
+Sustav->Administrator sustava: Forma za brisanje korisnickog racuna
+Administrator sustava->Sustav: Zahtjev za odobrenje moderatora fakulteta
+Sustav->Administrator sustava: Forma za odobrenje moderatora fakulteta 
+Administrator sustava->Sustav: Zahtjev za brisanje moderatora fakulteta
+Sustav->Administrator sustava: Forma za brisanje moderatora fakulteta
+Administrator sustava->Sustav: Zahtjev za zamrzavanje/blokiranje korisnickog racuna
+Sustav->Administrator sustava: Forma za zamrzavanje/blokiranje korisnickog racuna
+Administrator sustava->Sustav: Zahtjev za odobrenje natjecaja
+Sustav->Administrator sustava: Forma za odobrenje natjecaja
+Administrator sustava->Sustav: Zahtjev za upravljanje sustavskim vremenom
+Sustav->Administrator sustava: Forma za upravljanje sustavskim vremenom
+
+Administrator sustava->Sustav: Zahtjev za kreiranje fakulteta
+Sustav->Administrator sustava: Forma za kreiranje fakulteta
+Administrator sustava->Sustav: Unos podataka
+Sustav->Modul za kreiranje fakulteta: Zahtjev za kreiranje fakulteta
+Modul za kreiranje fakulteta->Modul za kreiranje fakulteta: Kreiranje fakulteta
+
+alt Uspjesno kreiranje fakulteta
+
+Modul za kreiranje fakulteta->Sustav: Uspjesno kreiran fakultet
+Sustav->Administrator sustava: Forma za pregled kreiranog fakulteta
+
+else Neuspjesno kreiranje fakulteta
+
+Modul za kreiranje fakulteta->Sustav: Neuspjesno kreiran fakultet
+Sustav->Administrator sustava: Poruka o neuspjesnom kreiranju fakulteta
+
+end
+
+Administrator sustava->Sustav: Zahtjev za odjavu iz sustava
+Sustav->Administrator sustava: Poruka odjave iz sustava

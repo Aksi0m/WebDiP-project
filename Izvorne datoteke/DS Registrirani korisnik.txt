@@ -1,0 +1,70 @@
+title DS Registrirani korisnik
+
+Registrirani korisnik->Sustav: Zahtjev za prijavu
+Sustav->Registrirani korisnik: Forma za prijavu
+Registrirani korisnik->Sustav: Unos podataka
+Sustav->Modul za prijavu: Kreiranje prijave
+Modul za prijavu->Modul za prijavu: Provjera podataka
+
+alt Valanji podaci
+
+    Modul za prijavu->Sustav: uspjesna prijava
+    Sustav->Registrirani korisnik: Prikaz glavne forme
+
+else Pogresni podaci
+
+    Modul za prijavu->Sustav: neuspjesna prijava
+Sustav->Registrirani korisnik: Poruka o neuspjesnoj prijavi
+
+end
+
+Registrirani korisnik->Sustav: Zahtjev za kreiranje digitalnog portfelja
+Sustav->Registrirani korisnik: Forma za kreiranje digitalnog portfelja
+Registrirani korisnik->Sustav: Unos podataka
+Sustav->Modul za kreiranje digitalnog portfelja: Kreiranje digitalnog portfelja
+Modul za kreiranje digitalnog portfelja->Modul za kreiranje digitalnog portfelja: Kreiranje portfelja
+
+
+alt Uspjesno kreiranje portfelja
+
+    Modul za kreiranje digitalnog portfelja->Sustav: Uspjesno kreiranje portfelja
+    Sustav->Registrirani korisnik: Prikaz forme digitalnog portfelja
+
+
+else Neuspjesno kreiranje portfelja
+
+    Modul za kreiranje digitalnog portfelja->Sustav: Neuspjesno kreiranje portfelja
+    Sustav->Registrirani korisnik: Poruka o neuspjesnom kreiranju portfelja
+
+end
+
+Registrirani korisnik->Sustav: Uvid u aktivne natjecaje
+Sustav->Registrirani korisnik: Podaci o aktivnim natjecajima
+Registrirani korisnik->Sustav: Zahtjev za prijavu na natjecaj
+Sustav->Registrirani korisnik: Forma za kreiranje prijave
+Registrirani korisnik->Sustav: Unos podataka
+Sustav->Modul za prijavu na natjecaj: Kreiranje priajvnice
+Modul za prijavu na natjecaj->Modul za prijavu na natjecaj: Kreiranje prijavnice
+
+alt Uspjesno kreiranje prijavnice
+
+Modul za prijavu na natjecaj->Sustav: Uspjesno kreiranje prijavnice
+Sustav->Registrirani korisnik: Forma za pregeld kreirane prijavnice
+
+else Neuspjesno kreiranje prijavnice
+
+Modul za prijavu na natjecaj->Sustav: Neuspjesno kreiranje prijavnice
+Sustav->Registrirani korisnik: Poruka o neuspjesno kreiranoj prijavnici
+
+end
+
+Registrirani korisnik->Sustav: komentiranje natjecaja
+Sustav->Registrirani korisnik: Potvrda komentiranja
+Registrirani korisnik->Sustav: Ocjenjivanje komentara
+Sustav->Registrirani korisnik: Potvrda ocjenjivanja
+
+Registrirani korisnik->Sustav: Zahtjev za pregled galerije slika natjecaja
+Sustav->Registrirani korisnik: Podaci o galeriji slika natjecaja
+
+Registrirani korisnik->Sustav: Zahtjev za odjavu iz sustava
+Sustav->Registrirani korisnik: Poruka odjave iz sustava

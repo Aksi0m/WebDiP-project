@@ -1,0 +1,48 @@
+title DS Administrator fakulteta
+
+Administrator fakulteta->Sustav: Zahtjev za prijavu
+Sustav->Administrator fakulteta: Forma za prijavu
+Administrator fakulteta->Sustav: Unos podataka
+Sustav->Modul za prijavu: Kreiranje prijave
+Modul za prijavu->Modul za prijavu: Provjera podataka
+
+alt Valanji podaci
+
+    Modul za prijavu->Sustav: Uspjesna prijava
+    Sustav->Administrator fakulteta: Prikaz glavne forme
+
+else Pogresni podaci
+
+    Modul za prijavu->Sustav: Neuspjesna prijava
+Sustav->Administrator fakulteta:Poruka o neuspjesnoj prijavi
+
+end
+
+Administrator fakulteta->Sustav: Zahtjev za statistiku natjecaja
+Sustav->Administrator fakulteta: Statistika natjecaja
+Administrator fakulteta->Sustav: Zahtjev za osobnim podacima korisnika prijavljenih na natejcaj
+Sustav->Administrator fakulteta: Osobni podaci korisnika
+Administrator fakulteta->Sustav: Zahtjev za dokumente korisnika prijavljenih na natjecaj
+Sustav->Administrator fakulteta: Dokumenti korisnika
+
+Administrator fakulteta->Sustav: Zahtjev za kreiranje DS/PDS
+Sustav->Administrator fakulteta: Forma za kreiranje DS/PDS
+Administrator fakulteta->Sustav: Unos podataka
+Sustav->Modul za kreiranje DS/PDS: kreiranje DS/PDS
+Modul za kreiranje DS/PDS->Modul za kreiranje DS/PDS: Kreiranje studija
+
+alt Uspjesno kreiran DS/PDS
+
+Modul za kreiranje DS/PDS->Sustav: Uspjesno kreiran DS/DPS
+Sustav->Administrator fakulteta: Forma za pregeld kreiranog studija
+
+else Neuspjesno kreiran DS/PDS
+
+Modul za kreiranje DS/PDS->Sustav: Neuspjesno kreiran DS/DPS
+Sustav->Administrator fakulteta: Poruka u neuspjesno kreiranom studiju
+
+end
+
+
+Administrator fakulteta->Sustav: Zahtjev za odjavu iz sustava
+Sustav->Administrator fakulteta: Poruka odjave iz sustava

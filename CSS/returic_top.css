@@ -1,0 +1,547 @@
+html{
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('../Slike/pozadina.jpg');
+	height: 100%;
+}
+
+#cizbornik{
+	border: 1pt solid yellow;
+	
+}
+	
+#slideshow-container  { width: 100%; height:384px; position:relative; }
+#slideshow-container img {-moz-box-shadow: 0 0 2px 2px yellow;	-webkit-box-shadow: 0 0 2px 2px yellow;	box-shadow: 0 0 2px 2px y display:block; position:absolute; margin: 0 150px  auto; z-index:0; }
+#Dokumenti ul li{
+	list-style: none;
+	margin: 1px 10px 10px 1px;
+}
+
+#kon{
+	height: 100%;
+}
+
+#zaglavljeStranice{
+	height: 50px;
+	border: 1pt solid yellow;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 1.5cm;
+	color: white;
+	background-image: url('../Slike/banner.jpg');
+}
+
+
+
+#csadrzaj{
+	width: 900px;
+	background-color: rgba(255,255,255,0.1);
+	border: 1pt solid yellow;
+	margin: 10px auto;
+	color: white;
+	min-height: 100%;
+	position: relative;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+
+}
+
+#csadrzajp{
+	width: 35%;
+	background-color: rgba(0,0,0,0.2);
+	margin: 0;
+	padding: 0;
+	color: white;
+	position: absolute;
+	top: 10%;
+	left: 60%;
+	
+}
+
+#header h1{
+	font-size: 16px;
+}
+
+
+
+table.forma{
+	min-width: 50%;
+	margin: 10px 10px 10px 10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+input{
+	border: 1pt solid yellow;
+	background-color: gray;
+	margin: 10px auto;
+	color: black;
+}
+
+input:hover{
+	color: black;
+	background-color: yellow;
+}
+
+
+#slika{
+	float: right;
+	margin: 320px 50px 10px 20px;
+}
+
+#slika img{
+	border: 2pt solid yellow;
+}
+
+#opisOsobne{
+	margin: 20px 20px;
+	height: 85%;
+}
+
+a{
+	color: yellow;
+}
+
+a:hover{
+	color: white;
+}
+
+#prijavljen{
+	margin-top: 10px;
+	float: left;
+	color: white;
+	width: 15%;
+	min-height: 150px;
+	border: 1pt solid yellow;
+	background-color: rgba(255,255,255,0.1);
+	text-align: center;
+	padding: 10px;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+
+#prijavljen img{
+	height:100px;
+	width: 100px;
+	border: 2pt solid yellow;
+}
+
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 1pt solid yellow;
+}
+h1:first-letter{
+	color: yellow;
+}
+
+#opisOsobne h2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#opisOsobne p{
+	text-align: justify;
+}
+
+h2:first-letter{
+	color: yellow;
+}
+
+#podnozje{
+	height: 30px;
+	width: 1000px;
+	background-color: #444444;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin: 0 0 0 -500px;
+	border-left: 1pt solid yellow;
+	border-right: 1pt solid yellow;
+	border-top: 1pt solid yellow;
+}
+
+#tekst{
+	float: right;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	line-height: 30px;
+	
+}
+
+#tekst a{text-decoration: none;}
+/*Tablica detalji natjecaja*/
+#zaglavljeNatjecaja{
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 1.5cm;
+	color: white;
+	background-color: #666666;
+
+}
+/*korisnici***************************************************/
+#zaglavlje{
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 1.5cm;
+	color: white;
+	background-color: #666666;
+	
+}
+
+table.korisnici {
+	border-collapse: collapse;
+	border: 1pt solid #666666;
+	margin: 10px auto;
+	width: 850px;
+	font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+	color: white;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+
+table.korisnici tr {
+
+	color: white;
+}
+
+table.korisnici th {
+	
+	font-weight: normal;
+	padding: 7px 7px 8px;
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 14px;
+}
+
+table.korisnici td {
+border-top: solid #666666 1px;
+	font-size: 12px;
+	padding: 4px 7px 2px;
+	vertical-align: top;
+	
+	
+}
+
+table.korisnici th:first-letter{
+	font-weight: bold; 
+	color: yellow;
+	font-size: 20px;
+}
+
+table.korisnici img{
+	height: 30px;
+	width: 30px;
+	border: 1pt solid yellow;
+}
+
+/*stranicenje***************************************************/
+
+#stranicenje {
+	color: white;
+	text-align: center;
+}
+
+#stranicenje a{
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
+}
+
+.pogreska{
+	color: #FF0000;
+	font-size: 70%;
+        font-weight: bold;
+}
+
+/*Komentari************************************************************/
+
+
+#komentari ul li{
+	list-style: none;
+	margin-top: 10px;
+}
+
+
+table.komentar {
+	border-collapse: collapse;
+	margin: 5px;
+		-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+table.komentar td{
+	border-bottom: 1pt solid #666666;
+}
+th.vrijeme{
+	padding-left: 200px;
+}
+
+
+.zaglavljeKomentara{
+	background-color: #666666;
+	color: white;
+}
+
+#komentari{
+	background-color: none;
+	padding: 10px;
+	width: 520px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*galerije natjecaja***********************************************/
+
+#galerije li{
+	display: inline;
+	list-style: none;
+}
+
+#galerije li img{
+	height: 150px;
+	width: 150px;
+}
+/*Dokumentacija****************************/
+
+#csadrzajj{
+	width: 900px;
+	background-color: rgba(255,255,255,0.1);
+	border: 1pt solid yellow;
+	margin: 10px auto;
+	color: white;
+	min-height: 100%;
+	position: relative;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+#csadrzajj div{
+	margin: 20px 20px;
+}
+
+
+
+#galerija ul{
+	margin-left: 8%;
+}
+
+#dijagrami li{
+	display: inline;
+	list-style: none;
+	float: left;
+	margin: 1px 10px 10px 1px;
+	text-align: center;
+}
+
+
+#dijagrami img{
+	border: 2pt solid gray;
+	height: 150px;
+	width: 150px;
+}
+
+#dijagrami a{
+	color: yellow;
+	text-decoration: none;
+}
+
+#dijagrami a:hover{
+	color: white;
+
+}
+
+#dijagrami img:hover{
+	border: 2pt solid yellow;
+}
+#specifikacije{
+
+	text-align:justify;
+	font-size:80%;
+}
+
+#popisDatoteka{
+	text-align:justify;
+	font-size:80%;
+}
+
+#tehnologija{
+	text-align:justify;
+	font-size:80%;
+}
+#uoceniProblemi{
+	text-align:justify;
+	font-size:80%;
+}
+#opisZavrsenostiProjekta{
+	text-align:justify;
+	font-size:80%;
+}
+/*Kreiraj natjecaj*/
+#kreirajNatjecaj{
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#opis{
+border: 1pt solid yellow;
+	background-color: gray;
+	margin: 10px auto;
+	color: black;
+}
+
+#opis:hover{
+	color: black;
+	background-color: yellow;
+}
+
+#kreirajNatjecaj a{
+	margin: 20px 381px 20px;
+}
+/*tabovi*/
+ul.tabs{
+    height:20px;
+	list-style: none;
+
+}
+
+ul.tabs li {
+    float:left;
+    background-color:#666666;
+    cursor:pointer;
+    padding:4px 15px 4px 15px; 
+    border-bottom:none;
+    position:relative;
+    top:1px;
+    margin-right:2px;
+    text-shadow:0 -1px 0 #3e0000;
+    color: white;
+    font-weight:bold;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+
+ul.tabs li.selected {
+    background-color: white;
+    color:#666666;
+    text-shadow:0 -1px 0 #c4bca8;
+    
+}
+
+ul.contents {
+    height:200px;
+	text-align:justify;
+    clear:both;
+    background-color: rgba(0,0,0,0.2);
+	margin-left: 20px;
+	margin-right: 20px;
+	-moz-box-shadow: 0 0 2px 2px yellow;
+	-webkit-box-shadow: 0 0 2px 2px yellow;
+	box-shadow: 0 0 2px 2px yellow;
+}
+
+ul.contents li{
+	margin-top: 20px;
+	padding: 10px 10px 10px auto;
+
+}
+ul.contents li div{
+	height: 200px;
+}
+
+ul.contents li p{
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+ul.contents li div img{
+	margin-top: 25px;
+	border: 2pt solid gray;
+}
+
+ul.contents li div img:hover{
+border: 2pt solid yellow;
+}
+
+#zaboravljenaLozinka{
+	margin-left: 87px;
+	margin-bottom: 5px;
+	border-top-style:ridge;
+   border-top-color: yellow;
+}
+
+#posaljiMail{
+	height: 50px;
+	width: 150px;
+	margin-left: 375px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-top-style:ridge;
+	border-top-color: yellow;
+}
+
+.odgovoriNa{
+	border-top-style:double;
+	border-top-color: yellow;
+}
+
+#vrati{
+	height: 50px;
+	width: 150px;
+	margin-left: 375px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-top-style:double;
+	border-top-color: yellow;
+
+}
+#vrati:hover{
+	border: 1pt solid yellow;
+}
+
+#graf{
+	
+	margin-left: 250px;
+}
+
+/*preporucivac*/
+
+#slanjePreporuke{
+	width: 400px;
+	margin: 30% 250px auto;
+	background-color: rgba(0,0,0,0.2);
+
+}
+
+#uploadPisma{
+	width: 500px;
+	height: 500px;
+	margin: 11% 200px auto;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#uploadPisma input[name=upismo]{
+	margin-top: 228px;
+	margin-left: 130px;
+}
+#uploadPisma input[name=ok]{
+	margin-top: 10px;
+	margin-left: 223px;
+}
+
+button[name=zaPregledP]{
+	width: 50px;
+	border-top-style:double;
+	border-top-color: yellow;
+}

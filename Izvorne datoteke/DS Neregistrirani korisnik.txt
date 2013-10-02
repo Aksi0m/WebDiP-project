@@ -1,0 +1,31 @@
+title DS Neregistrirani korisnik
+
+Neregistrirani korisnik->Sustav: Zahtjev za registraciju
+Sustav->Neregistrirani korisnik: Forma za registraciju
+
+loop
+
+Neregistrirani korisnik->Sustav: Unos podataka
+Sustav->Modul za registraciju: zahtjev za kreiranje novog racuna
+Modul za registraciju->Modul za registraciju:Provjera podataka
+
+alt Valjani podaci
+
+Modul za registraciju->Sustav: uspjesna registracija
+Sustav->Neregistrirani korisnik: podaci za    prijavu
+
+else Pogresni podaci
+
+Modul za registraciju->Sustav: neuspjesna registracija
+Sustav->Neregistrirani korisnik: poruka o pogresci podataka
+  
+end
+
+end
+
+Neregistrirani korisnik->Sustav: uvid u natjecaje
+Sustav->Neregistrirani korisnik: podaci o natjecajima
+Neregistrirani korisnik->Sustav: uvid u dokumentaciju
+Sustav->Neregistrirani korisnik: podaci o dokumentaciji 
+Neregistrirani korisnik->Sustav: uvid u rokove predaje
+Sustav->Neregistrirani korisnik: podaci o rokovima predaje
